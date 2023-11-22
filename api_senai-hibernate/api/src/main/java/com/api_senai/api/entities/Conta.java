@@ -24,4 +24,17 @@ public class Conta {
     @OneToOne
     @JoinColumn(name = "cliente", foreignKey = @ForeignKey(name = "cliente_fkey"))
     Cliente cliente;
+    
+    @OneToOne
+    @JoinColumn(name = "funcionario", foreignKey = @ForeignKey(name = "funcionario_fkey"))
+    Funcionario funcionario;
+
+    public void setAtivo(boolean b) {
+    }
+
+    public void setAllAtributosMapping(Conta contaAtualizado) {
+    }
+
+    public void setAllAtributos(Conta contaAtualizada) {
+    }
 }

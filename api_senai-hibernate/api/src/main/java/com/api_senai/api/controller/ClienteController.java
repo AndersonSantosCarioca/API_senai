@@ -62,7 +62,7 @@ public class ClienteController {
         } else {
             return new ResponseEntity<>(cliente, HttpStatus.NOT_FOUND);
         }
-<<<<<<< HEAD:api_senai-hibernate/api/src/main/java/com/api_senai/api/controller/ClienteController.java
+
     }
     @PutMapping("/mapping/{id}")
     public ResponseEntity<Cliente> updateClienteMapping (@RequestBody Cliente clienteAtualizado, @PathVariable Long id) {
@@ -74,8 +74,7 @@ public class ClienteController {
         } else {
             return new ResponseEntity<>(cliente, HttpStatus.NOT_FOUND);
         }
-=======
->>>>>>> ce0237effc9e733216e3d75d892967a03cee9cd3:api/src/main/java/com/api_senai/api/controller/ClienteController.java
+
     }
     @DeleteMapping("/{id}")
     public ResponseEntity<Cliente> deleteCliente(@PathVariable Long id){

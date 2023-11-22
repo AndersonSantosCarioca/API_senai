@@ -30,9 +30,10 @@ public class Cliente extends Pessoa{
     private String login;
     private String senha;
     private boolean ativo;
-
+    
     @OneToOne(mappedBy = "cliente")
     private Conta conta;
+    
 
     // public Cliente(){
     //     this.setAtivo(true);
